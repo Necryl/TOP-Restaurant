@@ -1,5 +1,6 @@
 let bodyElement;
 let contentElement;
+let headerElement;
 
 let getInitialElements = () => {
     bodyElement = document.querySelector('body');
@@ -9,7 +10,8 @@ let getInitialElements = () => {
 }
 
 let addHeaderFooter = () => {
-    bodyElement.prepend(document.createElement('header'));
+    headerElement = document.createElement('header');
+    bodyElement.prepend(headerElement);
     
     let footer = document.createElement('footer');
     let author = document.createElement('div');
@@ -31,4 +33,9 @@ let addHeaderFooter = () => {
 export default function initiate() {
     getInitialElements();
     addHeaderFooter();
+    return {
+        body: bodyElement,
+        header: headerElement,
+        content: contentElement,
+    }
 }
