@@ -3,7 +3,9 @@ let contentElement;
 
 let getInitialElements = () => {
     bodyElement = document.querySelector('body');
-    contentElement = document.querySelector('#content');
+    contentElement = document.createElement('div');
+    contentElement.setAttribute("id", "content");
+    bodyElement.appendChild(contentElement);
 }
 
 let addHeaderFooter = () => {
