@@ -51,8 +51,8 @@ cardElements[2].appendChild(
   createP("Discover the harmony between healthy food and deliciousness")
 );
 
-cardElements[3].appendChild(drinksElement);
 cardElements[3].appendChild(createP("Make memories with your loved ones"));
+cardElements[3].appendChild(drinksElement);
 
 cardElements.forEach((element) => {
   homeElement.appendChild(element);
