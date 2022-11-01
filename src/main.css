@@ -1,10 +1,83 @@
 html, body {
     margin: 0%;
     padding: 0%;
+    background-color: var(--bgCol);
+    height: 100vh;
+}
+
+:root {
+    --bgCol: #d3cca8;
+    --darkViolet: #382d45;
+    --brightGreen: #a5bf36;
+    --pink: #f57e80;
+    --blue: #04646c;
+    --lowGreen: #63954b;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
+    position: relative;
     display: grid;
     grid-auto-flow: column;
-    justify-items: center;
+    
+    background-color: var(--lowGreen);
+    box-shadow: 0px 1px 7px black;
+}
+
+header button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 0.5rem 0rem;
+    color: white;
+    border-radius: 0rem;
+
+    transition: 100ms;
+}
+
+header button:not(header button:first-child):before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0%;
+    content: "";
+    
+    width: 1px;
+    border-radius: 6px;
+    height: 80%;
+    background-color: white;
+}
+
+header button:hover, header button:focus {
+    background-color: var(--brightGreen);
+    color: black;
+}
+
+header button:active {
+    background-color: white;
+}
+
+footer {
+    margin-right: 0.7rem;
+    min-height: 1.7rem;
+    text-align: end;
+
+    font-size: 1.2rem;
+    display: grid;
+    place-items: center end;
+}
+footer a {
+    text-decoration: none;
+    color: var(--blue);
+}
+footer a:hover {
+    color: white;
+    text-shadow: 1px 1px black;
 }
