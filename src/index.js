@@ -6,8 +6,8 @@ import style from "./style.css";
 
 const mainElements = initiate();
 
-let createH2 = (text) => {
-  let result = document.createElement("h2");
+let createBTN = (text) => {
+  let result = document.createElement("button");
   result.textContent = text;
   return result;
 };
@@ -16,7 +16,7 @@ let pages = [home, menu, contact];
 pages = pages.reduce((final, current) => {
   final.push({
     name: current.title,
-    btn: createH2(current.title),
+    btn: createBTN(current.title),
     element: current.element,
   });
   return final;
@@ -41,4 +41,4 @@ pages.forEach((page) => {
 });
 
 
-viewPage("MENU");
+viewPage("CONTACT");

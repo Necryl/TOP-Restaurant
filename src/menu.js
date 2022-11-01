@@ -10,7 +10,7 @@ menuElement.classList.add("menu");
 
 let titleElement = document.createElement("h1");
 titleElement.textContent = "Food Heaven Menu";
-titleElement.classList.add("menu-title");
+titleElement.classList.add("title");
 menuElement.appendChild(titleElement);
 
 let getFoodName = (imgURL) => {

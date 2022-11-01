@@ -1,4 +1,41 @@
 let contactElement = document.createElement('div');
 contactElement.classList.add('contact');
 
+let titleElement = document.createElement('h1');
+titleElement.classList.add('title');
+titleElement.textContent = "Contact us:";
+contactElement.appendChild(titleElement);
+
+let formElement = document.createElement('form');
+contactElement.appendChild(formElement);
+
+let createLabel = (forAttr, text) => {
+    let result = document.createElement('label');
+    result.for = forAttr;
+    result.textContent = text;
+    return result;
+}
+
+formElement.appendChild(createLabel('name', 'Name: '));
+
+let nameField = document.createElement('input');
+nameField.type = 'text';
+nameField.id = 'name';
+nameField.name = 'name';
+formElement.appendChild(nameField);
+
+formElement.appendChild(createLabel('email', 'Email: '));
+
+let emailField = document.createElement('input');
+emailField.type = 'email';
+emailField.id = 'email';
+emailField.name = 'email';
+formElement.appendChild(emailField);
+
+formElement.appendChild(createLabel('message', 'Message: '));
+let messageElement = document.createElement('textarea');
+messageElement.id = 'message';
+messageElement.name = 'message';
+formElement.appendChild(messageElement);
+
 export default { title: "CONTACT", element: contactElement };
