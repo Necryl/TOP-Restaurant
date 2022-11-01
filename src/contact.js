@@ -38,4 +38,9 @@ messageElement.id = 'message';
 messageElement.name = 'message';
 formElement.appendChild(messageElement);
 
+let submitBtn = document.createElement('input');
+submitBtn.type = 'submit';
+submitBtn.text = 'Send';
+formElement.appendChild(submitBtn);
+
 export default { title: "CONTACT", element: contactElement };
