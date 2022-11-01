@@ -2,7 +2,10 @@ import initiate from "./initiate.js";
 import home from "./home.js";
 import menu from "./menu.js";
 import contact from "./contact.js";
-import style from "./style.css";
+import mainStyles from "./main.css";
+import homeStyles from "./home.css";
+import menuStyles from "./menu.css";
+import conatctStyles from "./contact.css";
 
 const mainElements = initiate();
 
