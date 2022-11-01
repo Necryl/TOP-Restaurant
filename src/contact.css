@@ -1,0 +1,29 @@
+.contact {
+    display: grid;
+    justify-items: center;
+}
+
+.contact .title {
+    margin: 0.7rem 0rem;
+}
+
+.contact form {
+    justify-self: start;
+    display: grid;
+    grid-template-columns: auto;
+
+    width: 100%;
+}
+
+.contact form * {
+    margin: 0rem 3vw;
+}
+
+form input {
+    min-width: min(20ch, 80vw);
+    max-width: 30vw;
+}
+
+.contact form textarea {
+    height: 10em;
+}
