@@ -58,10 +58,12 @@ header button:not(header button:first-child):before {
 header button:hover, header button:focus {
     background-color: var(--brightGreen);
     color: black;
+    border-radius: 0.2rem;
 }
 
 header button:active {
     background-color: white;
+    border-radius: 0.1rem;
 }
 
 footer {
