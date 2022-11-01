@@ -1,33 +1,42 @@
 .banner {
-    background-image: url('./images/restaurant.jpg');
-    background-position: center;
-    background-size: cover;
-    min-height: 35vh;
+  background-image: url("./images/restaurant.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 35vh;
 
-    display: grid;
-    place-items: center;
-    box-shadow: inset 0px 0px 5px black;
-    margin-bottom: 2rem;
+  display: grid;
+  place-items: center;
+  box-shadow: inset 0px 0px 5px black;
+  margin-bottom: 2rem;
 }
 .banner * {
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    font-size: 3rem;
-    text-align: center;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .home .card {
-    padding: 1rem 4rem;
+  padding: 2vh 5vw;
 
-    display: grid;
-    grid-template-columns: auto auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+  align-items: center;
 }
 
 .home .card img {
-    object-fit: cover;
-    max-height: 14rem;
-    width: 100%;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
+  object-fit: cover;
+  max-height: 30vh;
+  width: 100%;
+  min-width: 30vw;
+  max-width: 50vw;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
 
-border-radius: 1rem;
+  border-radius: 2vh;
+}
+
+.home .card p {
+    font-size: 1.4rem;
+    margin: 0%;
 }
