@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "webpack",
-    "live": "webpack serve"
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development"
   },
   "keywords": [],
   "author": "Necryl <necrylthewayfarer@gmail.com>",

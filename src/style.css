@@ -1,3 +1,12 @@
 body {
     background-color: aqua;
 }
+
+.food-card img {
+    aspect-ratio: 1/1;
+    height: 10rem;
+}
+
+.home .card img {
+    height: 14rem;
+}

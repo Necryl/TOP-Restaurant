@@ -40,5 +40,7 @@ pages.forEach((page) => {
   mainElements.content.appendChild(page.element);
 });
 
+console.log(menu.images);
+
 
 viewPage("MENU");

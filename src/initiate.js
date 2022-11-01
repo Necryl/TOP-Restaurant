@@ -15,17 +15,21 @@ let addHeaderFooter = () => {
     
     let footer = document.createElement('footer');
     let author = document.createElement('div');
-    let link = document.createElement('a');
 
-    let href="https://github.com/Necryl"
-    let target="_blank"
+    let createA = (text, href) => {
+        let result = document.createElement('a');
+        result.textContent = text;
+        result.setAttribute("href", href);
+        result.setAttribute("target", "_blank");
+        return result;
+    }
+    
+    let linkNecryl = createA("Necryl", "https://github.com/Necryl");
 
-    link.setAttribute("href", href);
-    link.setAttribute("target", target);
-
-    link.innerText = "Necryl";
-    author.textContent = "Created by";
-    author.appendChild(link);
+    author.textContent = "Created by ";
+    author.appendChild(linkNecryl);
+    author.append(document.createTextNode(' as part of '));
+    author.append(createA("The Odin Project", "https://www.theodinproject.com"));
     footer.appendChild(author);
     bodyElement.appendChild(footer);
 }
