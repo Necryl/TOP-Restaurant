@@ -66,6 +66,10 @@ header button:active {
     border-radius: 0.1rem;
 }
 
+#content {
+    padding-bottom: 10rem;
+}
+
 footer {
     margin-right: 0.7rem;
     min-height: 1.7rem;
