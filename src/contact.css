@@ -11,6 +11,7 @@
     justify-self: start;
     display: grid;
     grid-template-columns: auto;
+    gap: 0.3rem;
 
     width: 100%;
 }
@@ -19,11 +20,19 @@
     margin: 0rem 3vw;
 }
 
-form input {
+.contact form input:not(.contact form input[type='submit']) {
     min-width: min(20ch, 80vw);
     max-width: 30vw;
 }
 
 .contact form textarea {
     height: 10em;
+}
+
+.contact form input[type='submit'] {
+    justify-self: end;
+    width: 8ch;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
 }
