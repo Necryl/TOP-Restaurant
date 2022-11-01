@@ -22,6 +22,7 @@ let nameField = document.createElement('input');
 nameField.type = 'text';
 nameField.id = 'name';
 nameField.name = 'name';
+nameField.required = true;
 formElement.appendChild(nameField);
 
 formElement.appendChild(createLabel('email', 'Email: '));
@@ -30,12 +31,14 @@ let emailField = document.createElement('input');
 emailField.type = 'email';
 emailField.id = 'email';
 emailField.name = 'email';
+emailField.required = true;
 formElement.appendChild(emailField);
 
 formElement.appendChild(createLabel('message', 'Message: '));
 let messageElement = document.createElement('textarea');
 messageElement.id = 'message';
 messageElement.name = 'message';
+messageElement.required = true;
 formElement.appendChild(messageElement);
 
 let submitBtn = document.createElement('input');
