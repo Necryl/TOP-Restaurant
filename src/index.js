@@ -41,4 +41,4 @@ pages.forEach((page) => {
 });
 
 
-viewPage("CONTACT");
+viewPage("HOME");
