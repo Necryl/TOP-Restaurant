@@ -36,3 +36,39 @@
     border-radius: 0.3rem;
     margin-top: 1rem;
 }
+
+.contact form input[type='submit'] {
+    color: white;
+
+    border: 2.5px solid;
+    background-color: rgb(212, 78, 44);
+    --sideCol: rgb(172, 74, 49);
+    --bottomCol: rgb(119, 50, 33);
+    --topCol: rgb(236, 157, 105);
+    border-bottom-color: var(--bottomCol);
+    border-left-color: var(--sideCol);
+    border-right-color: var(--sideCol);
+    border-top-color: var(--topCol);
+
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.26);
+    transition: 100ms;
+}
+
+.contact form input[type='submit']:hover, .contact form input[type='submit']:focus {
+    background-color: rgb(226, 88, 53);
+    --sideCol: rgb(192, 68, 37);
+    --topCol: rgb(252, 173, 120);
+
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.26);
+}
+
+.contact form input[type='submit']:active {
+    border-bottom-color: white;
+    border-bottom-width: 1.5px;
+    border-top-color: var(--bottomCol);
+    border-top-width: 3px;
+    border-right-color: rgb(238, 130, 97);
+    color: rgba(255, 245, 238, 0.877);
+
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.26);
+}
