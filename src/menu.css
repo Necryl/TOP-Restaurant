@@ -26,9 +26,11 @@
     height: 10rem;
     width: 10rem;
     border-radius: 1rem;
+    border: 1px solid black;
 }
 
 .food-card h3 {
     text-align: center;
     margin: 0%;
+    font-weight: 400;
 }

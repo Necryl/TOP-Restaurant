@@ -5,6 +5,21 @@ html, body {
     height: 100vh;
 }
 
+@font-face {
+    font-family: 'Alice';
+    src: url('./fonts/Alice/Alice-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('./fonts/Lobster/Lobster-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
 :root {
     --bgCol: #d3cca8;
     --darkViolet: #382d45;
@@ -12,6 +27,13 @@ html, body {
     --pink: #f57e80;
     --blue: #04646c;
     --lowGreen: #63954b;
+}
+:root, :root button {
+    font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    font-family: 'Alice', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -32,7 +54,8 @@ header button {
     position: relative;
     border: none;
     background-color: transparent;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     padding: 0.5rem 0rem;
     color: white;
     border-radius: 0rem;
